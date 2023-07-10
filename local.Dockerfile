@@ -9,7 +9,8 @@ RUN npm install
 
 COPY . ./
 
-RUN npm build
+RUN apk --update --no-cache add curl
+RUN npm run build
 
 CMD npm run dev
 
