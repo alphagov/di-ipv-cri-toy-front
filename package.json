@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
-    "start:ci": "API_BASE_URL=http://127.0.0.1:8050 REDIS_SESSION_URL= NODE_ENV=development node src/app.js",
+    "start:ci": "API_BASE_URL=http://127.0.0.1:8080 REDIS_SESSION_URL= NODE_ENV=development node src/app.js",
     "dev": "NODE_ENV=development nodemon src/app.js",
     "lint": "eslint",
     "build": "npm run build:sass && npm run build:js && npm run copy-assets",
